@@ -1,5 +1,11 @@
 import java.math.BigInteger;
 
+/*
+ * Classe che implementa lo standard di verifica di un IBAN
+ * @author Corbino Piermaria
+ * @version 1.0
+ */
+
 public class IBAN {
     
     private String iban;
@@ -7,6 +13,11 @@ public class IBAN {
     public IBAN(){
 
     }
+    /*
+     * Costruttore che setta l'oggetto della classe con un iban
+     * 
+     * @param i valore che rappresenta il codice iban
+     */
 
     public IBAN(String i){
         setIban(i);
@@ -19,6 +30,12 @@ public class IBAN {
     public String getIban() {
         return iban;
     }
+    /*
+     * Metodo che controlla la correttezza di un codice iban
+     * 
+     * @return vero se il codice è conforme allo standard iban, falso altrimenti
+     * @throws NullPointerException l'iban risulta essere vuoto o nullo
+     */
 
     public boolean verificaIban(){
 
